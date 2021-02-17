@@ -7,4 +7,5 @@ def home(request):
 
 def blog(request):
     # return HttpResponse("This is my blog page created by Juwana (/blog)")
-    return render(request, 'blog.html')
+    context = {'name': 'Juwana Zerman', 'phrase': 'What I Have Been Up To'}
+    return render(request, 'blog.html', context)
