@@ -1,12 +1,664 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
+
 <body>
-    
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header index4">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand logo" href="index.html">
+                                <img src="assets/images/logo/logo.svg" alt="Logo" />
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="active" href="#hero-area">Home</a>
+                                        <ul class="sub-menu">
+                                            <li><a class="active" href="index4.html">Personal Porofolio</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#services">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#about-me">About me</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#portfolio">Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="portfolio.html">Portfolio</a></li>
+                                            <li><a href="portfolio-single.html">Portfolio Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#blog">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                            <li><a href="blog-single-sidebar.html">Blog Single Sibebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- navbar collapse -->
+                            <div class="button">
+                                <a href="contact.html" class="btn">Contact Me</a>
+                            </div>
+                        </nav>
+                        <!-- navbar -->
+
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- navbar area -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section class="hero-area index4">
+        <!-- Single Slider -->
+        <div class="hero-inner">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 co-12">
+                        <div class="home-slider">
+                            <div class="hero-text">
+                                <h5 class="small wow fadeInUp" data-wow-delay=".3s">Hello There...</h5>
+                                <h1 class="wow fadeInUp" data-wow-delay=".5s"><span>I am</span> Juwana</h1>
+                                <ul class="wow fadeInUp" data-wow-delay=".7s">
+                                    <li>Web Developer</li>
+                                    <li>Full Stack Engineer</li>
+                                    <li>DevOps Engineer</li>
+                                </ul>
+                                <p class="wow fadeInUp" data-wow-delay=".9s">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard
+                                    <br>dummy text ever since.</p>
+                                <div class="button wow fadeInUp" data-wow-delay="1.1s">
+                                    <a href="about-us.html" class="btn">Hire Me Now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="personal-image wow fadeInRight" data-wow-delay=".5s">
+                            <img src="https://via.placeholder.com/200x300" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Single Slider -->
+    </section>
+    <!--/ End Hero Area -->
+
+    <!-- Start Service Area -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title ">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">What I Offer</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">My Services</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-head">
+                <img class="service-patern wow fadeInLeft" data-wow-delay=".5s"
+                    src="assets/images/service/service-patern.png" alt="#">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".2s">
+                            <h3><a href="service-single.html">Discover, Explore the Product</a></h3>
+                            <div class="icon">
+                                <i class="lni lni-microscope"></i>
+                            </div>
+                            <p>Discover, Explore & Understanding The Product</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".4s">
+                            <h3><a href="service-single.html">Art Direction & Brand Strategy</a></h3>
+                            <div class="icon">
+                                <i class="lni lni-blackboard"></i>
+                            </div>
+                            <p>Art Direction & Brand Communication</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".6s">
+                            <h3><a href="service-single.html">Product UX, Design & Development‎‎</a></h3>
+                            <div class="icon">
+                                <i class="lni lni-ux"></i>
+                            </div>
+                            <p>Digital Product UX, Design & Development</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".8s">
+                            <h3><a href="service-single.html">Marketing Strategy & SEO Campaigns</a></h3>
+                            <div class="icon">
+                                <i class="lni lni-graph"></i>
+                            </div>
+                            <p>Marketing Strategy & SEO Campaigns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End Services Area -->
+
+    <!-- Start About Us Area -->
+    <section id="about-me" class="about-us index-4 section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="about-left">
+                        <div class="section-title align-left">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">my story</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">About Me</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">We're a digital product and UX agency Strategy,
+                                design
+                                and development across all platforms.</p>
+                        </div>
+                        <div class="about-tab wow fadeInUp" data-wow-delay=".5s">
+                            <!-- Nav Tab  -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#t-tab1"
+                                        role="tab">About Me</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab2"
+                                        role="tab">Experience</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab3"
+                                        role="tab">Education</a></li>
+                            </ul>
+                            <!--/ End Nav Tab -->
+                            <div class="tab-content" id="myTabContent">
+                                <!-- Tab 1 -->
+                                <div class="tab-pane fade show active" id="t-tab1" role="tabpanel">
+                                    <div class="tab-content">
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla .Nemo en
+                                            ipsam voluptatem quia voluptas sit asper.</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <ul>
+                                                    <li><span>Name : </span>Stiven Milner</li>
+                                                    <li><span>Age : </span>27 Years</li>
+                                                    <li><span>Nationality :</span>American</li>
+                                                    <li><span>Freelance :</span> Available</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <ul>
+                                                    <li><span>Address :</span> New York</li>
+                                                    <li><span>Phone :</span>+21621184010</li>
+                                                    <li><span>Email : </span>you@mail.com</li>
+                                                    <li><span>Skype : </span>steve.milner</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ End Tab 1 -->
+                                <!-- Tab 2 -->
+                                <div class="tab-pane fade" id="t-tab2" role="tabpanel">
+                                    <div class="tab-content">
+                                        <h3>UI/UX Designer <span> 2015 - 2017, Google INC | New York</span></h3>
+                                        <p>Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                                            faucibus diam consequat.</p>
+
+                                        <h3>Web Designer <span> 2017 - 2018, Facebook INC | New York</span></h3>
+                                        <p>Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                                            faucibus diam consequat.</p>
+                                    </div>
+                                </div>
+                                <!--/ End Tab 2 -->
+                                <!-- Tab 3 -->
+                                <div class="tab-pane fade" id="t-tab3" role="tabpanel">
+                                    <div class="tab-content">
+                                        <h3>Stanford University <span> 2016 - 2017, Specialization Course | New
+                                                York</span></h3>
+                                        <p>Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                                            faucibus diam consequat.</p>
+
+                                        <h3>Stanford University <span> 2017 - 2020, Bachelor Degree | New York</span>
+                                        </h3>
+                                        <p>Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                                            faucibus diam consequat, Molestie, a laoreet urna tempor vivamus vel gravida
+                                            augue, quis imperdiet sem etiam sedio</p>
+                                    </div>
+                                </div>
+                                <!--/ End Tab 3 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="about-right wow fadeInRight" data-wow-delay=".5s">
+                        <img src="https://via.placeholder.com/320x340" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End About Us Area -->
+
+    <!-- Start Portfolio Area-->
+    <section class="portfolio-section section">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <div class="section-title align-left">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Latest Cases</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"> My projects</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div class="portfolio-button-head">
+                        <div class="portfolio-btn-wrapper wow fadeInUp" data-wow-delay=".4s">
+                            <button class="portfolio-btn active" data-filter="*">All</button>
+                            <button class="portfolio-btn" data-filter=".branding">Branding</button>
+                            <button class="portfolio-btn" data-filter=".marketing">Marketing</button>
+                            <button class="portfolio-btn" data-filter=".web">Web Design</button>
+                            <button class="portfolio-btn" data-filter=".graphic">Graphic Design</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 grid-item marketing">
+                    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".3s">
+                        <div class="portfolio-img">
+                            <img src="https://via.placeholder.com/600x500" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="pf-content">
+                                <span class="category">Marketing</span>
+                                <h4><a href="#">Best Marketing tips & tricks</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item marketing">
+                    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".4s">
+                        <div class="portfolio-img">
+                            <img src="https://via.placeholder.com/600x400" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="pf-content">
+                                <span class="category">Marketing</span>
+                                <h4><a href="#">Unique Marketing tips & tricks</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item web">
+                    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".5s">
+                        <div class="portfolio-img">
+                            <img src="https://via.placeholder.com/600x700" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="pf-content">
+                                <span class="category">Web Design</span>
+                                <h4><a href="#">Best Web Design in 2023</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item branding">
+                    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".6s">
+                        <div class="portfolio-img">
+                            <img src="https://via.placeholder.com/687x597" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="pf-content">
+                                <span class="category">Branding</span>
+                                <h4><a href="#">Best Branding Solutions </a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item web">
+                    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".7s">
+                        <div class="portfolio-img">
+                            <img src="https://via.placeholder.com/700x1080" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="pf-content">
+                                <span class="category">Web Design</span>
+                                <h4><a href="#">Best Web Design in 2023</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item graphic">
+                    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".8s">
+                        <div class="portfolio-img">
+                            <img src="https://via.placeholder.com/600x726" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="pf-content">
+                                <span class="category">Graphic Design</span>
+                                <h4><a href="#">Best Graphic Design in 2023</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item graphic">
+                    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".8s">
+                        <div class="portfolio-img">
+                            <img src="https://via.placeholder.com/600x342" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="pf-content">
+                                <span class="category">Graphic Design</span>
+                                <h4><a href="#">Best Graphic Design in 2023</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Area-->
+
+    <!-- Start Latest News Area -->
+    <div class="latest-news-area section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">latest news</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Latest News & Blog</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img class="thumb" src="https://via.placeholder.com/1000x700" alt="#">
+                            <div class="meta-details">
+                                <img src="https://via.placeholder.com/100x100" alt="#"> <span>BY TIM NORTON</span>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a href="blog-single-sidebar.html">Make your team a Design driven
+                                    company</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".4s">
+                        <div class="image">
+                            <img class="thumb" src="https://via.placeholder.com/1000x700" alt="#">
+                            <div class="meta-details">
+                                <img src="https://via.placeholder.com/100x100" alt="#"> <span>BY TIM NORTON</span>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a href="blog-single-sidebar.html">The newest web framework that changed
+                                    the world</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img class="thumb" src="https://via.placeholder.com/1000x700" alt="#">
+                            <div class="meta-details">
+                                <img src="https://via.placeholder.com/100x100" alt="#"> <span>BY TIM NORTON</span>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a href="blog-single-sidebar.html">5 ways to improve user retention for
+                                    your startup</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Latest News Area -->
+
+    <!-- Start Newsletter Area -->
+    <section id="blog" class="newsletter-area section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-8 col-12">
+                    <!-- Start Newsletter Form -->
+                    <div class="subscribe-text wow fadeInLeft" data-wow-delay=".2s">
+                        <h6>Sign up for Newsletter</h6>
+                        <p class="">Sign Up and start using a free account <br> to see what it's all about.</p>
+                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                            <input name="EMAIL" placeholder="Your email address" class="common-input"
+                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                                required="" type="email">
+                            <div class="button">
+                                <button class="btn">Subscribe Now!</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Newsletter Form -->
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="mini-call-action wow fadeInRight" data-wow-delay=".4s">
+                        <h4>Don't hesitate to <br> Contact me</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="button">
+                            <a href="contact.html" class="btn">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End Newsletter Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Middle Top -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="f-about single-footer">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/logo/footer-logo.svg" alt="Logo"></a>
+                            </div>
+                            <p>Start building your creative website with our awesome template Massive.</p>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="lni lni-instagram"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-twitter"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>Pages</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Our Blog</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+        </div>
+        <!--/ End Footer Middle -->
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="left">
+                                <p>Copyright &copy2021 Juwana Zerman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        //========= testimonial
+        tns({
+            container: '.testimonial-slider',
+            items: 1,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                992: {
+                    items: 2,
+                },
+                1170: {
+                    items: 2,
+                }
+            }
+        });
+        //============== isotope masonry js with imagesloaded
+        imagesLoaded('#container', function () {
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope(elem, {
+                // options
+                itemSelector: '.grid-item',
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-item'
+                }
+            });
+
+            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+            filterButtons.forEach(e =>
+                e.addEventListener('click', () => {
+
+                    let filterValue = event.target.getAttribute('data-filter');
+                    iso.arrange({
+                        filter: filterValue
+                    });
+                })
+            );
+        });
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+    </script>
 </body>
+
 </html>
