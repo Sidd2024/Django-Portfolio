@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -7,7 +8,7 @@
     <title>Portfolio</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.svg" /> -->
     <!-- Place favicon.ico in the root directory -->
 
     <!-- Web Font -->
@@ -15,12 +16,12 @@
         rel="stylesheet">
 
     <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/LineIcons.2.0.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/tiny-slider.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/glightbox.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
 
 </head>
 
@@ -52,7 +53,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand logo" href="index.html">
-                                <img src="assets/images/logo/logo.svg" alt="Logo" />
+                                <img src="{% static 'images/logo/logo.svg' %}" alt="Logo" />
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -160,7 +161,7 @@
             </div>
             <div class="single-head">
                 <img class="service-patern wow fadeInLeft" data-wow-delay=".5s"
-                    src="assets/images/service/service-patern.png" alt="#">
+                    src="{% static 'images/service/service-patern.png' %}" alt="#">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="single-service wow fadeInUp" data-wow-delay=".2s">
@@ -535,10 +536,10 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-12">
                         <!-- Single Widget -->
-                        <div class="f-about single-footer">
+                        <!-- <div class="f-about single-footer">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/images/logo/footer-logo.svg" alt="Logo"></a>
-                            </div>
+                                <a href="index.html"><img src="{% static 'images/logo/footer-logo.svg' %}" alt="Logo"></a>
+                            </div> -->
                             <p>Start building your creative website with our awesome template Massive.</p>
                             <div class="footer-social">
                                 <ul>
@@ -589,14 +590,14 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/imagesloaded.min.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/count-up.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/tiny-slider.js' %}"></script>
+    <script src="{% static 'js/glightbox.min.js' %}"></script>
+    <script src="{% static './js/imagesloaded.min.js' %}"></script>
+    <script src="{% static './js/isotope.min.js' %}"></script>
+    <script src="{% static './js/main.js' %}"></script>
     <script type="text/javascript">
         //========= testimonial
         tns({
