@@ -5,7 +5,8 @@ body {
 
 /* Nav */
 nav {
-    background-color: white;
+    background-color: #683aa4;
+    color: white;
 }
 
 .navbar-brand img {
@@ -16,19 +17,20 @@ nav {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 900;
-    color: #683aa4;
+    color: white;
 }
 
 nav ul li a {
-    color: #a9a9a9;
-    font-size: 22px;
+    color: white;
+    font-size: 24px;
     margin: auto 10px;
 }
 
 nav ul li a:hover {
-    color: #683aa4;
+    color: #4c4950;
 }
 
+/* Hero */
 section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -80,13 +82,12 @@ button {
     margin-bottom: 20px;
 }
 
-
-/* projects */
+/* Projects */
 #projects .projects {
     margin-bottom: 50px;
 }
 
-/* contact */
+/* Contact */
 #contact {
     text-align: center;
     background-color: #683aa4;
@@ -95,5 +96,11 @@ button {
 
 #contact h1 {
     text-align: center;
+    color: white;
+}
+
+/* Card */
+#serviceCards {
+    background-color: #683aa4;
     color: white;
 }
