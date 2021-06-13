@@ -14,5 +14,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('blog/', views.blog, name='blog'),
     path('contact/', ContactCreate.as_view(), name='contact'),
-    path('thanks/', thanks, name='thanks')
+    path('thanks/', thanks, name='thanks'),
+    path('', views.PostList.as_view(), name='blog'),
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 ]
