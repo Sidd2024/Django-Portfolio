@@ -30,6 +30,11 @@ nav ul li a:hover {
     color: #4c4950;
 }
 
+.navbar-toggler {
+    color: white;
+
+}
+
 /* Hero */
 section {
     padding-top: 50px;
@@ -50,8 +55,9 @@ section p {
 }
 
 button {
-    max-width: 50%;
-    border-radius: 50px !important;
+    max-width: 40%;
+    border-radius: 40px !important;
+
 }
 
 #hero .col {
