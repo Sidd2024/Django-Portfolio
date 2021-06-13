@@ -21,6 +21,7 @@ from django.views.decorators.cache import cache_control
 from django.contrib.staticfiles.views import serve
 from django.conf.urls.static import static
 from . import settings
+from django.core.mail import send_mail, BadHeaderError
 
 # Add this after the rest of your urlpatterns. (Ensure you don't have another url defined for your static files
 # urlpatterns += static(settings.STATIC_URL,
@@ -29,7 +30,6 @@ from . import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-
 ]
 
 if settings.DEBUG:
