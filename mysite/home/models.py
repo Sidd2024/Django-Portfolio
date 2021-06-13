@@ -10,4 +10,4 @@ class Contact(models.Model):
     message = models.TextField(max_length=350)
 
     def __str__(self):
-        return f"{self.name} {self.email} {self.message}"
+        return f"{self.name} - {self.email} - {self.message}"
