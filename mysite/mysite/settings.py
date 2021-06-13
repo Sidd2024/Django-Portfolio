@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mysite'
+    'mysite',
+    'home',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,9 @@ STATICFILES_DIRS = [ BASE_DIR / "static", './css/style.css' ]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'testemail@gmail.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025
