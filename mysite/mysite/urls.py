@@ -30,6 +30,7 @@ from django.core.mail import send_mail, BadHeaderError
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
+    #path('', include('blog.urls')),
 ]
 
 if settings.DEBUG:
