@@ -3,7 +3,11 @@ from django.views.generic import CreateView
 from .models import Contact
 from django.urls import reverse_lazy
 from .forms import ContactForm
-from home.models import Contact
+from .models import Contact
+from .models import Post
+from django.views.generic.detail import DetailView
+from django.views.generic.list import ListView
+from django.utils import timezone
 # from django.core.mail import send_mail, BadHeaderError, EmailMessage
 
 # Create your views here.
@@ -45,6 +49,16 @@ def contact(request):
     return render(request, 'contact.html')
 
 def blog(request):
-    # return HttpResponse("This is my blog page created by Juwana (/blog)")
+
     context = {'name': 'Juwana Zerman', 'phrase': 'What I Have Been Up To'}
     return render(request, 'blog.html', context)
+
+class PostList(ListView):
+    ordering = ['created_on']
+    template_name = 'blog.html'
+    context_object_name = 'posts'
+    model = Post
+
+class PostDetail(DetailView):
+    model = Post
+    template_name = 'post_detail.html'
