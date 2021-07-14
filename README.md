@@ -6,13 +6,14 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 <br />
 
 **This portfolio is a work in progress and here are the items left to complete.**
-###To Do List (remaining items to complete)
+<br />
+### To Do List (remaining items to complete)
 - [ ] Update about me information
 - [ ] Update projects
 - [ ] Setup blog page and CMS
 - [ ] Deploy
 <br />
-###Built Using
+### Built Using
 * [Python](https://www.python.org)
 * [Django](https://www.djangoproject.com/)
 * [Bootstrap](https://getbootstrap.com)
