@@ -14,6 +14,7 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [ ] Deploy
 <br />
 ### Built Using
+
 * [Python](https://www.python.org)
 * [Django](https://www.djangoproject.com/)
 * [Bootstrap](https://getbootstrap.com)
