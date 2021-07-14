@@ -12,8 +12,9 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 ### To Do List (remaining items to complete)
 - [X] Update about me information
 - [ ] Update projects
+- [ ] Switch database from SQLite to PostgreSQL
 - [ ] Setup blog page and CMS
-- [ ] Deploy
+- [ ] Deploy to custom domain
 
 <br />
 
