@@ -14,11 +14,12 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [ ] Deploy
 
 <br />
+
 ### Built Using
 
-* [Python](https://www.python.org)
-* [Django](https://www.djangoproject.com/)
-* [Bootstrap](https://getbootstrap.com)
-* [HTML](https://www.w3.org/html/)
-* [CSS](https://www.w3schools.com/css/)
-* [GitHub Actions](https://docs.github.com/en/actions)
+- [Python](https://www.python.org)
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com)
+- [HTML](https://www.w3.org/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [GitHub Actions](https://docs.github.com/en/actions)
