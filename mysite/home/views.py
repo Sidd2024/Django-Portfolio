@@ -48,10 +48,6 @@ def contact(request):
 
     return render(request, 'contact.html')
 
-def blog(request):
-
-    context = {'name': 'Juwana Zerman', 'phrase': 'What I Have Been Up To'}
-    return render(request, 'blog.html', context)
 
 class PostList(ListView):
     ordering = ['created_on']
@@ -59,6 +55,12 @@ class PostList(ListView):
     context_object_name = 'posts'
     model = Post
 
+
 class PostDetail(DetailView):
     model = Post
     template_name = 'post_detail.html'
+
+def blog(request):
+
+    #context = ['PostList']
+    return render(request, 'blog.html')
