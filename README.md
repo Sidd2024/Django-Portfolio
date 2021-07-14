@@ -12,6 +12,7 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [ ] Update projects
 - [ ] Setup blog page and CMS
 - [ ] Deploy
+
 <br />
 ### Built Using
 
