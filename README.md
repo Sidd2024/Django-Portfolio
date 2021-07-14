@@ -1,3 +1,5 @@
+[![Django CI](https://github.com/Juwana-Zerman/Django-Portfolio/actions/workflows/django.yml/badge.svg)](https://github.com/Juwana-Zerman/Django-Portfolio/actions/workflows/django.yml)
+
 # Django-Portfolio
 
 This is a portfolio I'm making with Python using the Django framework. I have made other portfolios in the past using WordPress and a Bootstrap template. I figured I would build one from scratch to enhance my Django skills. <br />
