@@ -23,6 +23,7 @@ from django.conf.urls.static import static
 from . import settings
 from django.core.mail import send_mail, BadHeaderError
 
+
 # Add this after the rest of your urlpatterns. (Ensure you don't have another url defined for your static files
 # urlpatterns += static(settings.STATIC_URL,
 #                       view=cache_control(no_cache=True, must_revalidate=True)(serve))
