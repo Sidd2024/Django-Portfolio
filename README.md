@@ -8,7 +8,7 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 **This portfolio is a work in progress and here are the items left to complete.**
 <br />
 ### To Do List (remaining items to complete)
-- [ ] Update about me information
+- [X] Update about me information
 - [ ] Update projects
 - [ ] Setup blog page and CMS
 - [ ] Deploy
