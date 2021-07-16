@@ -8,6 +8,7 @@ from .models import Post
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from django.utils import timezone
+
 # from django.core.mail import send_mail, BadHeaderError, EmailMessage
 
 # Create your views here.
@@ -55,12 +56,12 @@ class PostList(ListView):
     context_object_name = 'posts'
     model = Post
 
-
 class PostDetail(DetailView):
     model = Post
-    template_name = 'post_detail.html'
+    template_name = 'blog.html' #'post_detail.html'
 
 def blog(request):
 
-    #context = ['PostList']
-    return render(request, 'blog.html')
+    posts = Post.objects.all()
+    context = {'posts': posts}
+    return render(request, 'blog.html', context)
