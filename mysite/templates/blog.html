@@ -39,16 +39,16 @@
 
 <h1>Blog</h1>
 
-{% block sidebar %}
+<!-- {% block sidebar %}
 
 <style>
     .card {
         box-shadow: 0 16px 48px #E3E7EB;
     }
-</style>
+</style> -->
 
 <!-- Sidebar Widgets Column -->
-<div class="col-md-4 float-right ">
+<!-- <div class="col-md-4 float-right ">
     <div class="card my-4">
         <h5 class="card-header">About This Page</h5>
         <div class="card-body">
@@ -58,16 +58,22 @@
     </div>
 </div>
 
-{% endblock sidebar %}
+{% endblock sidebar %} -->
 
 {% block content %}
+{% for posts in Post %}
+{{ posts.title }}
+{% endfor %}
+
+
+
 <!-- Content Goes here -->
 
-<div class="container">
-    <div class="row">
+<!-- <div class="container">
+    <div class="row"> -->
         <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
+        <!-- <div class="col-md-8 mt-3 left">
+            {% for post in Post %}
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
@@ -80,7 +86,7 @@
         </div>
 
     </div>
-</div>
+</div> -->
 {% endblock content %}
 
 
