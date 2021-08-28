@@ -13,6 +13,7 @@ import environ
 import os
 #import dotenv
 from pathlib import Path
+from decouple import config
 
 env = environ.Env(
     # set casting, default value
@@ -32,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
     'home',
     'widget_tweaks',
     'django-environ-2',
+    'python-decouple',
 ]
 
 MIDDLEWARE = [
