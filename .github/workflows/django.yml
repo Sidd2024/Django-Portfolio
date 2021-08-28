@@ -28,6 +28,6 @@ jobs:
         pip install django-widget-tweaks
     - name: Run Tests
       env:
-        SECRET_KEY: ('SECRET_KEY')
+        SECRET_KEY: mg=xg5h5_ppsxv++oms_ftp_)%u06zm70v4z%fbp1&^77!fwsl #dummy secret key
       run: |
         python mysite/manage.py test
