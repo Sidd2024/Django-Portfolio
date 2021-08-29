@@ -4,6 +4,8 @@ from . import views
 from .views import ContactCreate, thanks
 from django.conf.urls.static import static
 from home import views
+from .views import PostList, PostDetail
+
 
 # Django admin customization
 
@@ -12,9 +14,8 @@ admin.site.site_title = "Welcome to the Dashboard"
 admin.site.index_title = "Welcome to the Admin Portal"
 urlpatterns = [
     path('', views.home, name='home'),
-    path('blog/', views.blog, name='blog'),
+    path('blog/', PostList.as_view(), name='blog'),
     path('contact/', ContactCreate.as_view(), name='contact'),
     path('thanks/', thanks, name='thanks'),
-    path('', views.PostList.as_view(), name='blog'),
-    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+    path('postdetail/<int:pk>', PostDetail.as_view(), name='post_detail'),
 ]
