@@ -6,7 +6,7 @@ on:
     - 'README.md'
     - '.gitignore'
     branches: [ main ]
-    
+
 
 
 jobs:
@@ -51,4 +51,5 @@ jobs:
         DB_PORT: ${{ secrets.DB_PORT }}
         DB_ENGINE: ${{ secrets.DB_ENGINE }}
       run: |
+        python manage.py collectstatic --no-input
         python mysite/manage.py test
