@@ -2,9 +2,12 @@ name: Django CI
 
 on:
   push:
+    paths-ignore:
+    - 'README.md'
+    - '.gitignore'
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    
+
 
 jobs:
   build:
