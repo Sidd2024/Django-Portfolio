@@ -5,9 +5,10 @@ from django.urls import reverse_lazy
 from .forms import ContactForm
 from .models import Contact
 from .models import Post
-from django.views.generic.detail import DetailView
-from django.views.generic.list import ListView
+from django.views.generic import DetailView
+from django.views.generic import ListView
 from django.utils import timezone
+
 
 # from django.core.mail import send_mail, BadHeaderError, EmailMessage
 
@@ -15,7 +16,6 @@ from django.utils import timezone
 def home(request):
     # context = {'name': 'Juwana', 'Portfolio': 'Django'}
     return render(request, 'home.html')
-
 
 class ContactCreate(CreateView):
     model = Contact
@@ -58,10 +58,10 @@ class PostList(ListView):
 
 class PostDetail(DetailView):
     model = Post
-    template_name = 'blog.html' #'post_detail.html'
+    template_name = 'post_detail.html' #'post_detail.html'
 
-def blog(request):
+# def blog(request):
 
-    posts = Post.objects.all()
-    context = {'posts': posts}
-    return render(request, 'blog.html', context)
+#     posts = Post.objects.all()
+#     context = {'posts': posts}
+#     return render(request, 'blog.html', context)
