@@ -9,18 +9,17 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-import environ
+#import environ
 import os
 #import dotenv
 from pathlib import Path
-from decouple import config
 
-env = environ.Env(
+#env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, False)
-)
+#     DEBUG=(bool, False)
+# )
 # reading .env file
-environ.Env.read_env()
+#environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,13 +31,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+"""
+Try this site: https://stackoverflow.com/questions/66593382/how-to-pass-secrets-from-github-actions-to-python-environ-variables
+"""
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -53,8 +54,8 @@ INSTALLED_APPS = [
     'mysite',
     'home',
     'widget_tweaks',
-    'django-environ-2',
-    'python-decouple',
+    #'django-environ-2',
+    #'python-decouple',
 ]
 
 MIDDLEWARE = [
@@ -92,13 +93,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    #'default': {
+    'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': str(BASE_DIR / 'db.sqlite3'),
-        #
-        'default': env.db('DATABASE_URL'),
+        'ENGINE': os.environ.get('DB_ENGINE', 'django.db.backends.postgresql'),
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER', 'postgres'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'PORT': os.environ.get('DB_PORT', '5432'),
 
-    #}
+    }
 }
 
 
