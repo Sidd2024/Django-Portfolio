@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 
 datadump.json
+/mysite/mysite/settings.py
