@@ -14,6 +14,18 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [3.9]
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: github_actions
+
+        ports:
+          - 5433:5432
+
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
     - uses: actions/checkout@v2
@@ -28,6 +40,12 @@ jobs:
         pip install django-widget-tweaks
     - name: Run Tests
       env:
-        SECRET_KEY: mg=xg5h5_ppsxv++oms_ftp_)%u06zm70v4z%fbp1&^77!fwsl #dummy secret key
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        DB_NAME: ${{ secrets.DB_NAME }}
+        DB_USER: ${{ secrets.DB_USER }}
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        DB_HOST: ${{ secrets.DB_HOST }}
+        DB_PORT: ${{ secrets.DB_PORT }}
+        DB_ENGINE: ${{ secrets.DB_ENGINE }}
       run: |
         python mysite/manage.py test
