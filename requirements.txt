@@ -28,5 +28,5 @@ Werkzeug==1.0.1
 wrapt==1.12.1
 python-dotenv
 psycopg2
-django-environ-2==2.1.0
-python-decouple==3.4
+#django-environ-2==2.1.0
+#python-decouple==3.4
