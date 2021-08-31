@@ -5,7 +5,7 @@ from home import views
 from django.views.decorators.cache import cache_control
 from django.contrib.staticfiles.views import serve
 from django.conf.urls.static import static
-from . import settings
+from django.conf import settings
 from django.core.mail import send_mail, BadHeaderError
 
 
