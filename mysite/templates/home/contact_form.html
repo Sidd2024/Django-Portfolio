@@ -43,20 +43,22 @@
 <form method="POST" action=".">
     {% csrf_token %}
 
-    {% for hidden_field in form.hidden_fields %}
-        {{ hidden_field }}
+    {% for hidden_field in form.hidden_fields %} <br/>
+        {{ hidden_field }} <br/>
     {% endfor %}
-
+    <br/>
     {% for field in form.visible_fields %}
         <div class="form-group">
             {{ field.label_tag }}
+            <br/>
             {{ field }}
+            <br/>
             {% if field.help_text %}
                 <small class="form-text text-muted">{{ field.help_text }}</small>
             {% endif %}
         </div>
     {% endfor %}
-
+    <br/>
     <button type="submit" class="btn btn-secondary">Submit</button>
     {% endblock %}
     <!-- <div class="form-group">
