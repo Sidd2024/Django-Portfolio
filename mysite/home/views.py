@@ -58,8 +58,9 @@ class PostList(ListView):
 
 class PostDetail(DetailView):
     model = Post
+    ordering = ['created_on']
     template_name = 'post_detail.html' #'post_detail.html'
-
+    
 # def blog(request):
 
 #     posts = Post.objects.all()

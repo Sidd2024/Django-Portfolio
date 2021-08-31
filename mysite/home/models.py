@@ -20,7 +20,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     objects = models.Manager()
-
+    
     class Meta:
         ordering = ['-created_on']
 
