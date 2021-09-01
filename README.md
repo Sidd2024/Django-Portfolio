@@ -13,7 +13,8 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [X] Update about me information
 - [ ] Update projects
 - [X] Switch database from SQLite to PostgreSQL
-- [ ] Setup blog page and CMS
+- [X] Setup blog and post detail pages (render)
+- [ ] Add styling to blog and post detail pages
 - [ ] Deploy to custom domain
 
 <br />
