@@ -17,5 +17,5 @@ urlpatterns = [
     path('blog/', PostList.as_view(), name='blog'),
     path('contact/', ContactCreate.as_view(), name='contact'),
     path('thanks/', thanks, name='thanks'),
-    path('postdetail/<int:pk>', PostDetail.as_view(), name='post_detail'),
+    path('post-detail/<int:pk>', PostDetail.as_view(), name='post-detail'),
 ]
