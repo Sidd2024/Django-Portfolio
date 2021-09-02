@@ -6,7 +6,7 @@ from .forms import ContactForm
 from .models import Contact
 from .models import Post
 from django.views.generic import DetailView
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView
 from django.utils import timezone
 
 

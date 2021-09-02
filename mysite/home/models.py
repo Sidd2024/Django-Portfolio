@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls.base import reverse
+#from django.urls import reverse
 
 # Create your models here.
 
@@ -20,12 +22,17 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     objects = models.Manager()
-    
+
     class Meta:
         ordering = ['-created_on']
 
     def __str__(self):
         return self.title + ' | ' + str(self.author)
+
+    # def get_absolute_url(self):
+    #      return reverse('post-detail', args=(str(self.id)))
+
+
 
 class Contact(models.Model):
     name    = models.CharField(max_length=100)
