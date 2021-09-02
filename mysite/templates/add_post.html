@@ -43,8 +43,12 @@
 <body>
 <div class="container">
     <h2>Add Post</h2><br />
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
 
-
+    </form>
+    <button type="submit" class="btn btn-secondary">Post</button>
 
 
 </div>
