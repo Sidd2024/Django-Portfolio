@@ -17,6 +17,8 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [ ] Add styling/formatting to blog and post detail pages
 - [ ] Order Blog posts by date
 - [ ] Add categories to Blog
+- [ ] Add page to create posts
+- [ ] Set up authentication for create posts page
 - [ ] Deploy to custom domain
 
 <br />
