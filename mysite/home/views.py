@@ -6,7 +6,7 @@ from .forms import ContactForm
 from .models import Contact
 from .models import Post
 from django.views.generic import DetailView
-from django.views.generic import ListView
+from django.views.generic import ListView, CreateView
 from django.utils import timezone
 
 
@@ -14,7 +14,6 @@ from django.utils import timezone
 
 # Create your views here.
 def home(request):
-    # context = {'name': 'Juwana', 'Portfolio': 'Django'}
     return render(request, 'home.html')
 
 class ContactCreate(CreateView):
@@ -61,8 +60,7 @@ class PostDetail(DetailView):
     ordering = ['created_on']
     template_name = 'post-detail.html' #'post_detail.html'
 
-# def blog(request):
-
-#     posts = Post.objects.all()
-#     context = {'posts': posts}
-#     return render(request, 'blog.html', context)
+class AddPost(CreateView):
+    model = Post
+    template_name = 'add_post.html'
+    fields = '__all__'

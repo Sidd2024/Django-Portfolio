@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from . import views
-from .views import ContactCreate, thanks
+from .views import AddPost, ContactCreate, thanks
 from django.conf.urls.static import static
 from home import views
 from .views import PostList, PostDetail
@@ -18,4 +18,5 @@ urlpatterns = [
     path('contact/', ContactCreate.as_view(), name='contact'),
     path('thanks/', thanks, name='thanks'),
     path('post-detail/<int:pk>', PostDetail.as_view(), name='post-detail'),
+    path('add_post/', AddPost.as_view(), name='add_post'),
 ]
