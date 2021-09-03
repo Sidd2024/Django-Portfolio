@@ -57,7 +57,7 @@ class PostList(ListView):
 
 class PostDetail(DetailView):
     model = Post
-    ordering = ['-created_on']
+    ordering = ['created_on']
     template_name = 'post-detail.html' #'post_detail.html'
 
 class AddPost(CreateView):
