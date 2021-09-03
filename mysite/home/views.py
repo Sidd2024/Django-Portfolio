@@ -50,14 +50,14 @@ def contact(request):
 
 
 class PostList(ListView):
-    ordering = ['created_on']
+    ordering = ['-created_on']
     template_name = 'blog.html'
     context_object_name = 'posts'
     model = Post
 
 class PostDetail(DetailView):
     model = Post
-    ordering = ['created_on']
+    ordering = ['-created_on']
     template_name = 'post-detail.html' #'post_detail.html'
 
 class AddPost(CreateView):

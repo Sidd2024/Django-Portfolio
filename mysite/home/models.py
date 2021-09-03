@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls.base import reverse
 #from django.urls import reverse
+#from datetime import datetime
 
 # Create your models here.
 
@@ -26,11 +27,19 @@ class Post(models.Model):
     class Meta:
         ordering = ['-created_on']
 
+    # def save(self, *args, **kwargs):
+    #     # Set publish date to the date post is published, reset if unpublished
+    #     if self.published and self.created_on is None:
+    #         self.created_on = datetime.now()
+    #     elif not self.published and self.created_on is not None:
+    #         self.created_on = None
+    #     super().save(*args, **kwargs)
+
     def __str__(self):
         return self.title + ' | ' + str(self.author)
 
     # def get_absolute_url(self):
-    #      return reverse('post-detail', args=(str(self.id)))
+    #     return reverse('post-detail', args=(str(self.id)))
 
 
 
