@@ -60,7 +60,7 @@ class PostDetail(DetailView):
     ordering = ['created_on']
     template_name = 'post-detail.html' #'post_detail.html'
 
-class AddPost(CreateView):
-    model = Post
-    template_name = 'add_post.html'
-    fields = '__all__'
+# class AddPost(CreateView):
+#     model = Post
+#     template_name = 'add_post.html'
+#     fields = '__all__'
