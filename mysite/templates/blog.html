@@ -31,12 +31,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/"><button type="submit"
-                            class="btn btn-secondary btn-lg">Back to Home</button></a>
+                    <a class="nav-link active" aria-current="page" href="/">Back to Home</button></a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="{% url 'add_post' %}"><button type="submit" class="btn btn-secondary btn-lg">Add Post</button></a>
-                </li> -->
             </ul>
         </div>
     </div>
@@ -44,7 +40,8 @@
 <br/>
 
 <body>
-<h1>Blog</h1>
+<div class="container">
+    <h1>Blog</h1>
 
 <!-- {% block sidebar %}
 
@@ -68,14 +65,14 @@
 {% endblock sidebar %} -->
 
 
-<ul>
-{% for post in object_list %}
-<li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br />
-{{ post.content }}</li>
-{% endfor %}
-</ul>
+    <ul>
+    {% for post in object_list %}
+    <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br />
+    {{ post.content }}</li>
+    {% endfor %}
+    </ul>
 
-
+</div>
 <!-- Content Goes here -->
 
 <!-- <div class="container">
