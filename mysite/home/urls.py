@@ -18,5 +18,5 @@ urlpatterns = [
     path('contact/', ContactCreate.as_view(), name='contact'),
     path('thanks/', thanks, name='thanks'),
     path('post-detail/<int:pk>', PostDetail.as_view(), name='post-detail'),
-    path('add_post/', AddPost.as_view(), name='add_post'),
+    #path('add_post/', AddPost.as_view(), name='add_post'),
 ]
