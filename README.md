@@ -12,7 +12,7 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 ### To Do List (remaining items to complete)
 - [X] Update about me information
 - [X] Update Azure projects
-- [ ] Update AWS projects
+- [X] Update AWS projects
 - [ ] Update Other projects
 - [X] Switch database from SQLite to PostgreSQL
 - [X] Setup blog and post detail pages (render)
