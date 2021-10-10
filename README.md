@@ -16,9 +16,8 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [ ] Update Other projects
 - [X] Switch database from SQLite to PostgreSQL
 - [X] Setup blog and post detail pages (render)
-- [ ] Add styling/formatting/sidebar to blog and post detail pages
+- [X] Add styling/formatting/sidebar to blog and post detail pages
 - [X] Order Blog posts by date
-- [ ] Add categories to Blog
 - [ ] Deploy to custom domain
 
 <br />
