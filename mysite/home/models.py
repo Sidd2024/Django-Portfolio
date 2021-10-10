@@ -24,6 +24,13 @@ class Post(models.Model):
 
     objects = models.Manager()
 
+    published_date = models.DateTimeField(auto_now_add=True,
+                                          blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
     class Meta:
         ordering = ['-created_on']
 
@@ -36,7 +43,7 @@ class Post(models.Model):
     #     super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.title + ' | ' + str(self.author)
+        return self.title + ' | ' + str(self.author) + ' | ' + str(self.published_date)
 
     # def get_absolute_url(self):
     #     return reverse('post-detail', args=(str(self.id)))
