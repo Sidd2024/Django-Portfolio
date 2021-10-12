@@ -10,12 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import sys
+# import sys
 import django_heroku
 from pathlib import Path
 import dj_database_url
 
-sys.path.append('~/Django-Portfolio/mysite')
+# sys.path.append('~/Django-Portfolio/mysite')
 
 #mimetypes.add_type("text/css", ".css", True)
 
@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'site',
+    'newsite',
     'home',
     'widget_tweaks',
     'whitenoise.runserver_nostatic',
