@@ -166,7 +166,7 @@ EMAIL_PORT = 1025
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Activate Django-Heroku
-django_heroku.settings(locals())
+django_heroku.settings(config=locals(), staticfiles=False)
 
 LOGGING = {
     'version': 1,
