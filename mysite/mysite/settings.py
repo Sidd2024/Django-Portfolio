@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-#import environ
+import django_heroku
 import os
 #import dotenv
 from pathlib import Path
@@ -161,3 +161,6 @@ EMAIL_USE_TLS = False
 EMAIL_PORT = 1025
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Activate Django-Heroku
+django_heroku.settings(locals())
