@@ -152,7 +152,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (str(BASE_DIR.joinpath('static', 'css/style.css')),)
+STATICFILES_DIRS = (str(BASE_DIR.joinpath('mysite/static/', 'css/style.css')),)
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #DISABLE_COLLECTSTATIC = True
@@ -169,7 +169,7 @@ EMAIL_PORT = 1025
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Activate Django-Heroku
-django_heroku.settings(config=locals()) # , staticfiles=False)
+django_heroku.settings(config=locals(), staticfiles=False)
 
 LOGGING = {
     'version': 1,
