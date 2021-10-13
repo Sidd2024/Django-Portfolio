@@ -1,12 +1,13 @@
 from django.contrib import admin
 from django.urls import path, include
-from home import views
 # Add any of these imports if you don't already have them
 from django.views.decorators.cache import cache_control
-from django.contrib.staticfiles.views import serve
+#from django.contrib.staticfiles.views import serve
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.conf.urls.static import static
 from django.conf import settings
-from django.core.mail import send_mail, BadHeaderError
+from django.views.generic.base import RedirectView
+from home import views
 
 
 
@@ -18,10 +19,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     #path('blog/', include('blog.urls')),
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
 
 ]
 
 if not settings.DEBUG:
     #urlpatterns += static(settings.STATIC_URL)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    )
