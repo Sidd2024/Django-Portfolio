@@ -153,7 +153,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [ BASE_DIR / "static", '/css/style.css' ]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-DISABLE_COLLECTSTATIC = True
+#DISABLE_COLLECTSTATIC = True
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
