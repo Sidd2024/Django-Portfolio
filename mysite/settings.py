@@ -39,7 +39,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 """
 Try this site: https://stackoverflow.com/questions/66593382/how-to-pass-secrets-from-github-actions-to-python-environ-variables
 """
-SECRET_KEY = os.environ.get('SECRET_KEY', 'yx##_(6m_@r__0mm@7u(5q&dq)^xqlfd-_$2d!8%qme+ng4!7$')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False # os.environ.get('DEBUG')
@@ -105,9 +105,9 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'djangoportfolio'),
-        'USER': os.environ.get('DB_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', '10f35c2836f448cc8032934af5eec81a'),
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
 
     }
 }
