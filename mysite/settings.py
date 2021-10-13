@@ -150,7 +150,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [ ('admin', os.path.join(BASE_DIR, "static", 'admin', '/css/style.css')) ]
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, "static", 'admin') ]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #DISABLE_COLLECTSTATIC = True
