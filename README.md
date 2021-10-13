@@ -2,7 +2,7 @@
 
 # Django-Portfolio
 
-This is a portfolio I'm making with Python using the Django framework. I have made other portfolios in the past using WordPress and a Bootstrap template. I figured I would build one from scratch to enhance my Django skills. <br />
+This is a portfolio I made with Python using the Django framework. I have made other portfolios in the past using WordPress and a Bootstrap template. I figured I would build one from scratch to enhance my Django skills. <br />
 
 ![Portfolio Snippet](https://i.imgur.com/T48CWPF.png)
 <br />
@@ -10,6 +10,7 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 **This portfolio is a work in progress and here are the items left to complete.**
 <br />
 ### To Do List (remaining items to complete)
+
 - [X] Update about me information
 - [X] Update Azure projects
 - [X] Update AWS projects
@@ -17,8 +18,10 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [X] Switch database from SQLite to PostgreSQL
 - [X] Setup blog and post detail pages (render)
 - [X] Add styling/formatting/sidebar to blog and post detail pages
+- [X] Add published date to blog posts
 - [X] Order Blog posts by date
-- [ ] Deploy to custom domain
+- [ ] Add testing
+- [X] Deploy to custom domain
 
 <br />
 
@@ -31,3 +34,4 @@ This is a portfolio I'm making with Python using the Django framework. I have ma
 - [CSS](https://www.w3schools.com/css/)
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Heroku](https://www.heroku.com/)
