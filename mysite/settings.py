@@ -12,14 +12,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 Try this site: https://stackoverflow.com/questions/66593382/how-to-pass-secrets-from-github-actions-to-python-environ-variables
 """
 # Add a comma after SECRET_KEY here and enter your generated key between quotes ('SECRET_KEY', '') see below to generate
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'yx##_(6m_@r__0mm@7u(5q&dq)^xqlfd-_$2d!8%qme+ng4!7$')
 
 # To generate a secret key run the following command in the terminal:
 # python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False # os.environ.get('DEBUG') # switch to True to run locally
+DEBUG = True # os.environ.get('DEBUG') # switch to True to run locally
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://zerman-portfolio.herokuapp.com/']
 
@@ -75,27 +75,27 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 # **********Comment out this DATABASES section to run locally*************
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('DB_NAME'),
+#         'USER': os.environ.get('DB_USER'),
+#         'PASSWORD': os.environ.get('DB_PASSWORD'),
+#     }
+# }
 
 # ***********Uncomment this DATABASES section to run locally***********
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'djangoportfolio',
-#         'USER': 'postgres',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangoportfolio',
+        'USER': 'postgres',
+        'PASSWORD': '10f35c2836f448cc8032934af5eec81a',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
