@@ -2,7 +2,7 @@
 
 Allowing collaboration on this project will allow me to complete the final features of the project and to tweak some existing features. It will also give me practice in maintaining a project on GitHub. Please follow the below guidelines to help. If you see something that could be reworked please raise it in an issue and get assigned to it before proceeding with any work. Thank you for your contributions. HAPPY LEARNING!
 
-### ✳️ Python
+### ✳️ nothin
 
 1. This project uses Python. Make sure it is installed before working on this project. Check Python version by running: **```python -V```** in the terminal.
 2. Install **Postgresql**. I used Windows installers to install **Postgresql** locally for database install on a machine without postgresql. Be mindful you may have to install for your current system.
